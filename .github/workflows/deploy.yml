@@ -3,7 +3,7 @@ name: 'Terraform Azure Deployment'
 on:
   push:
     branches:
-      - dev  # Jab bhi aap dev branch pe push karoge, pipeline chal padegi
+      - dev
 
 jobs:
   terraform:
@@ -21,7 +21,7 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
         allow-no-subscriptions: true  # Yeh line add kar dena
-        
+
     # 3. GitHub ke runner server par Terraform install karna
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
