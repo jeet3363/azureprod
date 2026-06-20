@@ -24,9 +24,9 @@ provider "azurerm"{
 }
 
 
-resource "azurerm_resource_group" "test"{
+resource "azurerm_resource_group" "test1"{
 
-name = "rg-github"
+name = "rg-github1"
 location = "westeurope"
 
 
